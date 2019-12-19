@@ -1,0 +1,44 @@
+.newsletter {
+    grid-area: sign-up;
+    h2 {
+        font-family: $heading-font;
+    }
+.form-wrapper {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $desktop) {
+            flex-direction: row;
+        }
+        input {
+            margin: 1em 0;
+            flex-grow: 1;
+            height: 2em;
+            border-top: 1px solid $gray;
+            padding: 1em;
+            border-left: 3px solid $accent;
+            box-shadow: 2px 3px 12px $gray;
+            font-size: 16px;
+        }
+button {
+            margin: 1em 0;
+            background-color: $accent;
+            width: 100%;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid $accent;
+            height: 2em;
+            padding: 2em;
+            line-height: 0em;
+            box-shadow: 2px 3px 12px $gray;
+            &:hover {
+                background-color: lighten($accent, 10);
+                border: 1px solid lighten($accent, 10);
+            }
+            @media screen and (min-width: $desktop) {
+                margin-left: 24px;
+                width: auto;
+            }
+        }
+    }  
+}

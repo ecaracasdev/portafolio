@@ -1,4 +1,4 @@
-import { showAlert } from './message'
 import './styles.scss'
+import { headerAlert } from './partials/header/header'
 
-document.getElementById('btn').addEventListener('click', showAlert)
+document.getElementById('header-title').addEventListener('click', headerAlert)
